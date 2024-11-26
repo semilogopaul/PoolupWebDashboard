@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import React from "react";
+import VehicleList from "./components/VehicleList";
 
-function App() {
+const App = () => {
   return (
-    <>
-      
-    </>
-  )
-}
+    <div className="app-container">
+      <h1 className="gradient-text">PoolUp Dashboard</h1>
+      <VehicleList />
+    </div>
+  );
+};
 
-export default App
+export default App;

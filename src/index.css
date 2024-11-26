@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #0c0c0c, #303030);
+  color: #000000;
+  min-height: 100vh;
+}
+
+/* Gradient Text */
+.gradient-text {
+  text-transform: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #aeeeba, #008000);
+  background-clip: text; /* Standard property for compatibility */
+  -webkit-background-clip: text; /* Webkit-specific for browsers like Chrome, Edge, Safari */
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Vehicle List */
+.vehicle-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Vehicle Card */
+.vehicle-card {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #054805;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  height: 400px; /* Ensures equal height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  text-align: left;
+}
+
+.vehicle-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.vehicle-card p {
+  margin: 5px 0;
+}
+
+.vehicle-images {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.vehicle-card img {
+  width: 48%; /* Keeps images side-by-side with spacing */
+  height: auto;
+  border: 1.5px solid #054805;
+}
+
+/* Error Message */
+.error {
+  color: #ff3333;
+  font-weight: bold;
+}
+
+/* Loading */
+.loadingState i {
+  opacity: 0.8;
+  font-size: 5rem;
+  margin-top: 50px;
+  animation: spin 1s linear infinite;
+  color:#054805;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vehicle-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .vehicle-images {
+    flex-direction: column;
+  }
+
+  .vehicle-card img {
+    width: 100%;
+  }
+}
