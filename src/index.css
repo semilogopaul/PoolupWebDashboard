@@ -1,28 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 /* General Styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background: linear-gradient(to bottom, #0c0c0c, #303030);
+  background: linear-gradient(to right, #151515, #000000);
   color: #000000;
   min-height: 100vh;
 }
 
 /* Gradient Text */
 .gradient-text {
-  text-transform: none;
   font-size: 2.5rem;
   font-weight: bold;
-  background: linear-gradient(to right, #aeeeba, #008000);
+  background: linear-gradient(to right, #214228, #008000);
   background-clip: text; /* Standard property for compatibility */
   -webkit-background-clip: text; /* Webkit-specific for browsers like Chrome, Edge, Safari */
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin-bottom: 20px;
 }
-
 
 .app-container {
   text-align: center;
@@ -38,7 +36,6 @@ body {
   padding: 20px;
   transition: background-color 0.3s ease;
 }
-
 
 /* Vehicle Card */
 .vehicle-card {
@@ -85,11 +82,10 @@ body {
 
 /* Loading */
 .loadingState i {
-  opacity: 0.8;
   font-size: 5rem;
   margin-top: 50px;
   animation: spin 1s linear infinite;
-  color:#054805;
+  color: #054805;
 }
 
 @keyframes spin {
